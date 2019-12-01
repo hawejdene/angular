@@ -12,6 +12,10 @@ import {FormsModule} from '@angular/forms';
 import { ArcEnCielComponent } from './tp2/arc-en-ciel/arc-en-ciel.component';
 import { ArcEnCielDirective } from './tp2/arc-en-ciel/arc-en-ciel.directive';
 import { ThemesComponent } from './tp2/themes/themes.component';
+import { EmbaucheeComponent } from './cv/embauchee/embauchee.component';
+import { HeaderComponent } from './header/header.component';
+import { DetailsIdComponent } from './cv/details-id/details-id.component';
+import { UpdatzComponent } from './cv/updatz/updatz.component';
 
 
 @NgModule({
@@ -25,9 +29,14 @@ import { ThemesComponent } from './tp2/themes/themes.component';
     MiniWordComponent,
     ArcEnCielComponent,
     ArcEnCielDirective,
-    ThemesComponent
+    ThemesComponent,
+    EmbaucheeComponent,
+    HeaderComponent,
+    DetailsIdComponent,
+    UpdatzComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,

@@ -25,5 +25,10 @@ persons: Person[];
   deletePerson(person: Person) {
     this.persons = this.persons.filter(obj => obj !== person);
   }
-
+  updatePerson(person: Person) {
+    const index = this.persons.findIndex(fperson => fperson.id === person.id);
+    if (index !== -1) {
+      this.persons[index] = person;
+    }
+  }
 }

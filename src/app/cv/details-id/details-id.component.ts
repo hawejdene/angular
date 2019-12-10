@@ -23,5 +23,8 @@ export class DetailsIdComponent implements OnInit {
     this.cvService.deletePerson(this.person);
     this.router.navigate(['cvs']);
   }
+  update() {
+    this.router.navigate(['update', this.person.id]);
+  }
 
 }

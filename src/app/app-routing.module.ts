@@ -6,10 +6,12 @@ import {ArcEnCielComponent} from './tp2/arc-en-ciel/arc-en-ciel.component';
 import {ThemesComponent} from './tp2/themes/themes.component';
 import {EmbaucheeComponent} from './cv/embauchee/embauchee.component';
 import {DetailsIdComponent} from './cv/details-id/details-id.component';
+import {UpdatzComponent} from './cv/updatz/updatz.component';
 
 const routes: Routes = [
   { path: 'cvs', component: CvComponent },
   { path: 'embauchee', component: EmbaucheeComponent },
+  {path: 'update/:id' , component: UpdatzComponent},
   {path: 'details/:id', component: DetailsIdComponent},
   { path: 'miniWord', component: MiniWordComponent },
   { path: 'arc-en-ciel', component: ArcEnCielComponent},

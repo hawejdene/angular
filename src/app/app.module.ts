@@ -8,7 +8,7 @@ import { ItemComponent } from './cv/item/item.component';
 import { ListComponent } from './cv/list/list.component';
 import { DefaultImagePipe } from './pipes/default-image.pipe';
 import { MiniWordComponent } from './tp2/mini-word/mini-word.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { ArcEnCielComponent } from './tp2/arc-en-ciel/arc-en-ciel.component';
 import { ArcEnCielDirective } from './tp2/arc-en-ciel/arc-en-ciel.directive';
 import { ThemesComponent } from './tp2/themes/themes.component';
@@ -39,7 +39,7 @@ import { UpdatzComponent } from './cv/updatz/updatz.component';
     FormsModule,
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
